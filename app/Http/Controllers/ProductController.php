@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use App\User;
 
 class ProductController extends Controller
 {
@@ -25,5 +27,19 @@ class ProductController extends Controller
      */
     public function showproduct(){
         return view('showproduct');
+    }
+
+    /**
+     * @param Request $request
+     * @return Response
+     */
+    public function storeproduct(Request $request){
+        $product = new Product;
+        $product->productname=$request->productname;
+        $product->type=$request->type;
+        $product->city=$request->city;
+        $product->url=$request->url;
+        $product->save();
+        return redirect('showuser');
     }
 }

@@ -75,8 +75,8 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/useraccount') }}">User account</a>
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/showuser') }}">User account</a>
+                        <a href="{{ url('/') }}">Home</a>
                         <a href="{{ url('/addproduct') }}">Add product</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
@@ -91,8 +91,8 @@
                 </div>
 
                 <div class="links">
-                    <input type="search" name="productbar" id="productbar"><br>
-                    <input type="search" name="citybar" id="citybar"><br>
+                    <input type="search" name="productbar" id="productbar" value="productname"><br>
+                    <input type="search" name="citybar" id="citybar" value="City"><br>
                     <a href="{{ url('/search') }}">search</a>
                 </div>
                 <div class="map">

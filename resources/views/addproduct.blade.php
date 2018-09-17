@@ -75,8 +75,8 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/useraccount') }}">User account</a>
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/showuser') }}">User account</a>
+                        <a href="{{ url('/') }}">Home</a>
                         <a href="{{ url('/addproduct') }}">Add product</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
@@ -95,8 +95,16 @@
             </div>
             <div>
             <h2>Register a product</h2>
-            <img src="https://placebear.com/300/200" alt=""><br>
-            <span><textarea name="newproductcontent" id="newproductcontent" cols="70" rows="10"></textarea><button name="validatenewcontent">Validate</button></span>
+            <form action="addproduct" method="post">
+            @csrf
+            <label for="productname">Name</label><input type="text" name="productname"><br>
+            <label for="type">Type</label><input type="text" name="type"><br>
+            <label for="city">City</label><input type="text" name="city"><br>
+            <label for="url">URL</label><input type="text" name="url"><br>
+            <button type="submit" name="id">Submit</button>
+            </form>
+            <!-- <img src="https://placebear.com/300/200" alt=""><br> -->
+            <!-- <span><textarea name="newproductcontent" id="newproductcontent" cols="70" rows="10"></textarea><button name="validatenewcontent">Validate</button></span> -->
             </div>
             </div>
         </div>
