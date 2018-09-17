@@ -27,4 +27,4 @@ route::get('/showproduct', 'ProductController@showproduct');
 
 route::get('/showuser', 'UserController@showuser');
 
-route::post('/addproduct', 'ProductController@storeproduct');
+route::post('/addproduct', 'ProductController@storeproduct')->middleware('auth');
