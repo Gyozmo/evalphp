@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+route::get('/product', 'ProductController@searchresult')->middleware('auth');

@@ -26,3 +26,10 @@ class HomeController extends Controller
         return view('home');
     }
 }
+    // /**
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function searchresult(){
+    //     return view('product');
+    // }
+
