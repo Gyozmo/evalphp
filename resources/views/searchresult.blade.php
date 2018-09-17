@@ -77,6 +77,7 @@
                     @auth
                         <a href="{{ url('/useraccount') }}">User account</a>
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/addproduct') }}">Add product</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
@@ -92,7 +93,7 @@
                 <div class="links">
                     <input type="search" name="productbar" id="productbar"><br>
                     <input type="search" name="citybar" id="citybar"><br>
-                    <a href="{{ url('/product') }}">search</a>
+                    <a href="{{ url('/search') }}">search</a>
                 </div>
                 <div class="map">
                 <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.arK7rBx8q5O4b8qkN2uF0wHaEK%26pid%3D15.1&f=1" alt="">

@@ -90,14 +90,14 @@
                     Toys 'r urs
                 </div>
 
-                <div class="links">
-                    <input type="search" name="productbar" id="productbar"><br>
-                    <input type="search" name="citybar" id="citybar"><br>
-                    <a href="{{ url('/search') }}">search</a>
-                </div>
-                <div class="map">
-                <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.arK7rBx8q5O4b8qkN2uF0wHaEK%26pid%3D15.1&f=1" alt="">
-                </div>
+            <div>
+            <h2>Products u already have registered</h2>
+            </div>
+            <div>
+            <h2>Register a product</h2>
+            <img src="https://placebear.com/300/200" alt=""><br>
+            <span><textarea name="newproductcontent" id="newproductcontent" cols="70" rows="10"></textarea><button name="validatenewcontent">Validate</button></span>
+            </div>
             </div>
         </div>
     </body>

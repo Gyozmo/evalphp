@@ -87,18 +87,9 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Toys 'r urs
+                    This is ur profile
                 </div>
 
-                <div class="links">
-                    <input type="search" name="productbar" id="productbar"><br>
-                    <input type="search" name="citybar" id="citybar"><br>
-                    <a href="{{ url('/search') }}">search</a>
-                </div>
-                <div class="map">
-                <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.arK7rBx8q5O4b8qkN2uF0wHaEK%26pid%3D15.1&f=1" alt="">
-                </div>
-            </div>
         </div>
     </body>
 </html>

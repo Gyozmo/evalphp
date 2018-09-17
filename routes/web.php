@@ -19,4 +19,11 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-route::get('/product', 'ProductController@searchresult')->middleware('auth');
+route::get('/search', 'ProductController@searchresult');
+
+route::get('/addproduct', 'ProductController@addproduct')->middleware('auth');
+
+route::get('/showproduct', 'ProductController@showproduct');
+
+route::get('/showuser', 'UserController@showuser');
+

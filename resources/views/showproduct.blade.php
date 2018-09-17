@@ -75,7 +75,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/useraccount') }}">User account</a>
+                        <a href="{{ url('/showuser') }}">User account</a>
                         <a href="{{ url('/home') }}">Home</a>
                         <a href="{{ url('/addproduct') }}">Add product</a>
                     @else
@@ -90,14 +90,11 @@
                     Toys 'r urs
                 </div>
 
-                <div class="links">
-                    <input type="search" name="productbar" id="productbar"><br>
-                    <input type="search" name="citybar" id="citybar"><br>
-                    <a href="{{ url('/search') }}">search</a>
-                </div>
-                <div class="map">
-                <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.arK7rBx8q5O4b8qkN2uF0wHaEK%26pid%3D15.1&f=1" alt="">
-                </div>
+            <div>
+            <h2>This is the product you have selected</h2>
+            <img src="https://placekitten.com/300/200" alt=""><br>
+            <span><h4>This is the description of the selected product</h4><button name="sendmail">Send mail</button></span>
+            
             </div>
         </div>
     </body>

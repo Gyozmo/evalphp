@@ -10,6 +10,20 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function searchresult(){
-        return view('product');
+        return view('searchresult');
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function addproduct(){
+        return view('addproduct');
+    }
+
+    /**
+     * @return \Illuminate\Http\Response
+     */
+    public function showproduct(){
+        return view('showproduct');
     }
 }
